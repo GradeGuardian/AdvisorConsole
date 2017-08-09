@@ -1,0 +1,10 @@
+.full-height {
+    min-height: 700px;
+    height: 80vh;
+}
+
+.risk-thumbnail {
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 99em !important;
+}
