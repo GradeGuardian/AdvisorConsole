@@ -3,15 +3,15 @@ $(document).ready(() => {
     showStudentData()
 
     $('#risk-button-1').click(() => {
-        $('#tab-header').removeClass('bg-danger').removeClass('bg-success').addClass('indigo')
+        $('#tab-header').removeClass('bg-danger').removeClass('bg-success').addClass('teal')
     })
 
     $('#risk-button-2').click(() => {
-        $('#tab-header').removeClass('bg-success').removeClass('indigo').addClass('bg-danger')
+        $('#tab-header').removeClass('bg-success').removeClass('teal').addClass('bg-danger')
     })
 
     $('#risk-button-3').click(() => {
-        $('#tab-header').removeClass('bg-danger').removeClass('indigo').addClass('bg-success')
+        $('#tab-header').removeClass('bg-danger').removeClass('teal').addClass('bg-success')
     })
 })
 
