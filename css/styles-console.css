@@ -1,0 +1,16 @@
+.full-height {
+    min-height: 700px;
+    height: 75vh;
+    overflow-y: auto;
+}
+
+.risk-thumbnail {
+    height: 70px;
+    width: 70px;
+    border-radius: 99em !important;
+}
+
+.content-card {
+    width: 100%;
+    height: 100%;
+}
