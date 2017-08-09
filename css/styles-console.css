@@ -22,3 +22,20 @@ body {
 .risk-card:hover {
     cursor: pointer;
 }
+
+#student-name-header {
+    padding-bottom: 8px;
+    border-bottom: 3px solid #222222;
+}
+
+.student-property {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#student-risk-status {
+    padding: 4px !important;
+    font-weight: bold;
+    color: white;
+}
