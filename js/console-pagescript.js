@@ -1,6 +1,18 @@
 $(document).ready(() => {
     $('#student-data-container').empty()
     showStudentData()
+
+    $('#risk-button-1').click(() => {
+        $('#tab-header').removeClass('bg-danger').removeClass('bg-success').addClass('indigo')
+    })
+
+    $('#risk-button-2').click(() => {
+        $('#tab-header').removeClass('bg-success').removeClass('indigo').addClass('bg-danger')
+    })
+
+    $('#risk-button-3').click(() => {
+        $('#tab-header').removeClass('bg-danger').removeClass('indigo').addClass('bg-success')
+    })
 })
 
 function showStudentData() {
