@@ -14,35 +14,59 @@ var studentDataFields = [
         label: "age",
         description: "Age",
         evaluate: (data) => {
-
+            return data
         }
     },
     {
         label: "famsize",
         description: "Family size",
         evaluate: (data) => {
-
+            if( data === "LT3" ) {
+                return "Less than or equal to 3"
+            } else if (data === "GT3") {
+                return "Greater than 3"
+            }
         }
     },
     {
         label: "Pstatus",
         description: "Parents' cohabitation status",
         evaluate: (data) => {
-
+            if (data === "T") {
+                return "Living together"
+            } else {
+                return "Living apart"
+            }
         }
     },
     {
         label: "Medu",
         description: "Mother's education",
         evaluate: (data) => {
-
+            if (data == "0") {
+                return "None"
+            } else if (data == "1") {
+                return "Primary education"
+            } else if (data == "2") {
+                return "Secondary education"
+            } else if (data >= "3") {
+                return "Higher education"
+            }
         }
     },
     {
         label: "Fedu",
         description: "Father's education",
         evaluate: (data) => {
-
+            if (data == "0") {
+                return "None"
+            } else if (data == "1") {
+                return "Primary education"
+            } else if (data == "2") {
+                return "Secondary education"
+            } else if (data >= "3") {
+                return "Higher education"
+            }
         }
     },
     {
