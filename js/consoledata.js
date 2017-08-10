@@ -8,10 +8,6 @@ var studentDataFields = [
         description: "Age"
     },
     {
-        label: "address",
-        description: "Home address type"
-    },
-    {
         label: "famsize",
         description: "Family size"
     },

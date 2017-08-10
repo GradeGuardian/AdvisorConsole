@@ -99,7 +99,7 @@ function showStudentData(data) {
     studentDataFields.forEach(studentData => {
         let row = $('<div>', { class: "row h-10" })
         row.append($('<span>', { class: "h5 student-property my-auto mb-2 mt-2", text: studentData.description + ":" }))
-        //row.append($('<span>', { id: "student-risk-status", class: "card bg-danger", text: "At Risk" }))
+        row.append($('<span>', { class: "my-auto mt-2", text: data[studentData.label] }))
         row.appendTo($container)
     })
 }
