@@ -17,6 +17,7 @@ $(document).ready(() => {
         dataType: "json",
         url: 'http://52.14.179.178:4404/api/v1/students',
         success: function(data) {
+            data.reverse()
             
             data.forEach(student => {
                 let studentCard = createStudentCard(student)
