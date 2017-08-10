@@ -68,7 +68,7 @@ function createStudentCard(data) {
     let thumbnailCol = $('<div class="col-xs-6 col-md-3 my-auto text-center"><img src="images/default_profile.png" class="risk-thumbnail z-depth-2"></div>')
     let nameCol = $('<div>', { class: 'col-xs-6 col-md-9 my-auto text-xs-center text-sm-center text-lg-left' })
 
-    nameCol.append($('<h2>', {text:data.name}))
+    nameCol.append($('<h2>', { class: "text-capitalize", text:data.name }))
     nameCol.append(riskBadge)
 
     row.append(thumbnailCol)
@@ -84,7 +84,7 @@ function showStudentData(data) {
     let $container = $('#student-data-container')
     $container.empty()
 
-    $container.append('<h1 class="text-center text-underline mb-4"><span id="student-name-header">' + data.name + '</span></h1>')
+    $container.append('<h1 class="text-center text-underline text-capitalize mb-4"><span id="student-name-header">' + data.name + '</span></h1>')
 
     let riskRow = $('<div>', { class: "row h-10" })
     riskRow.append('<span class="h5 student-property my-auto mb-2 mt-2">Risk Status: </span>')
